@@ -7,6 +7,10 @@ on:
     branches: [ main, develop ]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  checks: write
+
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
@@ -28,7 +32,7 @@ jobs:
       
     - name: Test
       run: dotnet test FlipkartMobile.sln --configuration Release --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx"
-      continue-on-error: true
+      # continue-on-error: true
       
     - name: Publish Test Results
       uses: dorny/test-reporter@v1
