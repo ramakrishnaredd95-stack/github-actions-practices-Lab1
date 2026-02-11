@@ -96,3 +96,4 @@ C:\Users\91807\OneDrive\Documents\AzureDevOps\GithubAction_Practice\FlipkartMobi
 C:\Users\91807\OneDrive\Documents\AzureDevOps\GithubAction_Practice\FlipkartMobilePage\obj\Debug\net10.0\FlipkartMobilePage.pdb
 C:\Users\91807\OneDrive\Documents\AzureDevOps\GithubAction_Practice\FlipkartMobilePage\obj\Debug\net10.0\FlipkartMobilePage.genruntimeconfig.cache
 C:\Users\91807\OneDrive\Documents\AzureDevOps\GithubAction_Practice\FlipkartMobilePage\obj\Debug\net10.0\ref\FlipkartMobilePage.dll
+C:\Users\91807\OneDrive\Documents\AzureDevOps\GithubAction_Practice\FlipkartMobilePage\obj\Debug\net10.0\FlipkartMobilePage.sourcelink.json

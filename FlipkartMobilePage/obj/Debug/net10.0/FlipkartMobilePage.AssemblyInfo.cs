@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlipkartMobilePage")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e2528c95adf912f7a2d8b4ff24ffcf464dc1e75")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlipkartMobilePage")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlipkartMobilePage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
