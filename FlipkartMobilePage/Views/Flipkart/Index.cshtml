@@ -1,0 +1,260 @@
+@{
+    ViewData["Title"] = "Flipkart - Mobile Phones";
+}
+
+<div class="flipkart-mobile-page">
+    <!-- Header -->
+    <header class="flipkart-header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>Flipkart</h1>
+                <span class="tagline">Explore <span class="plus">Plus</span></span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products, brands and more" />
+                <button><i class="search-icon">🔍</i></button>
+            </div>
+            <div class="header-actions">
+                <a href="#" class="login-btn">Login</a>
+                <a href="#" class="cart-btn">🛒 Cart</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="category-nav">
+        <a href="#" class="active">Mobiles</a>
+        <a href="#">Electronics</a>
+        <a href="#">Fashion</a>
+        <a href="#">Home</a>
+        <a href="#">Appliances</a>
+        <a href="#">Travel</a>
+        <a href="#">Grocery</a>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-content">
+            <h2>Mobile Phones</h2>
+            <p>Best Deals on Smartphones</p>
+        </div>
+    </section>
+
+    <!-- Filters and Products -->
+    <div class="main-content">
+        <aside class="filters">
+            <h3>Filters</h3>
+            
+            <div class="filter-section">
+                <h4>Price</h4>
+                <label><input type="checkbox" /> Under ₹10,000</label>
+                <label><input type="checkbox" /> ₹10,000 - ₹20,000</label>
+                <label><input type="checkbox" /> ₹20,000 - ₹50,000</label>
+                <label><input type="checkbox" /> Above ₹50,000</label>
+            </div>
+
+            <div class="filter-section">
+                <h4>Brand</h4>
+                <label><input type="checkbox" /> Samsung</label>
+                <label><input type="checkbox" /> Apple</label>
+                <label><input type="checkbox" /> OnePlus</label>
+                <label><input type="checkbox" /> Xiaomi</label>
+                <label><input type="checkbox" /> Google</label>
+                <label><input type="checkbox" /> Vivo</label>
+            </div>
+
+            <div class="filter-section">
+                <h4>Customer Rating</h4>
+                <label><input type="checkbox" /> 4★ & above</label>
+                <label><input type="checkbox" /> 3★ & above</label>
+            </div>
+        </aside>
+
+        <section class="products">
+            <div class="products-header">
+                <h3>Mobile Phones</h3>
+                <div class="sort-options">
+                    <span>Sort By:</span>
+                    <select>
+                        <option>Relevance</option>
+                        <option>Price -- Low to High</option>
+                        <option>Price -- High to Low</option>
+                        <option>Newest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="~/images/samsung-s24.jpg" alt="Samsung Galaxy S24 Ultra" onerror="this.src='https://via.placeholder.com/200x250?text=Samsung+S24'" />
+                        <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Samsung Galaxy S24 Ultra</h4>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.5)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹1,24,999</span>
+                            <span class="original-price">₹1,49,999</span>
+                            <span class="discount">16% off</span>
+                        </div>
+                        <p class="features">12GB RAM | 256GB Storage</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="~/images/iphone-15.jpg" alt="iPhone 15 Pro Max" onerror="this.src='https://via.placeholder.com/200x250?text=iPhone+15'" />
+                        <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>iPhone 15 Pro Max</h4>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.7)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹1,59,900</span>
+                            <span class="original-price">₹1,69,900</span>
+                            <span class="discount">6% off</span>
+                        </div>
+                        <p class="features">256GB | A17 Pro Chip</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="~/images/oneplus-12.jpg" alt="OnePlus 12" onerror="this.src='https://via.placeholder.com/200x250?text=OnePlus+12'" />
+                        <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>OnePlus 12</h4>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(4.4)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹64,999</span>
+                            <span class="original-price">₹69,999</span>
+                            <span class="discount">7% off</span>
+                        </div>
+                        <p class="features">12GB RAM | 256GB Storage</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="~/images/pixel-8.jpg" alt="Google Pixel 8 Pro" onerror="this.src='https://via.placeholder.com/200x250?text=Pixel+8'" />
+                        <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Google Pixel 8 Pro</h4>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.6)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹1,06,999</span>
+                            <span class="original-price">₹1,19,999</span>
+                            <span class="discount">11% off</span>
+                        </div>
+                        <p class="features">12GB RAM | 256GB Storage</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="~/images/xiaomi-14.jpg" alt="Xiaomi 14 Pro" onerror="this.src='https://via.placeholder.com/200x250?text=Xiaomi+14'" />
+                        <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Xiaomi 14 Pro</h4>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(4.3)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹79,999</span>
+                            <span class="original-price">₹89,999</span>
+                            <span class="discount">11% off</span>
+                        </div>
+                        <p class="features">12GB RAM | 256GB Storage</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="~/images/vivo-x100.jpg" alt="Vivo X100 Pro" onerror="this.src='https://via.placeholder.com/200x250?text=Vivo+X100'" />
+                        <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Vivo X100 Pro</h4>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.5)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹89,999</span>
+                            <span class="original-price">₹99,999</span>
+                            <span class="discount">10% off</span>
+                        </div>
+                        <p class="features">16GB RAM | 512GB Storage</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="flipkart-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ABOUT</h4>
+                <a href="#">Contact Us</a>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Corporate Information</a>
+            </div>
+            <div class="footer-section">
+                <h4>HELP</h4>
+                <a href="#">Payments</a>
+                <a href="#">Shipping</a>
+                <a href="#">Cancellation & Returns</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="footer-section">
+                <h4>POLICY</h4>
+                <a href="#">Return Policy</a>
+                <a href="#">Terms Of Use</a>
+                <a href="#">Security</a>
+                <a href="#">Privacy</a>
+            </div>
+            <div class="footer-section">
+                <h4>SOCIAL</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Flipkart.com</p>
+        </div>
+    </footer>
+</div>
+
+<link rel="stylesheet" href="~/css/flipkart.css" />
