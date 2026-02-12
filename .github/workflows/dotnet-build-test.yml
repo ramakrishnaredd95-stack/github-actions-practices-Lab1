@@ -78,6 +78,12 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     
+    - name: Create Azure Resource Group
+      run: az group create --name ${{ env.AZURE_RESOURCE_GROUP }} --location eastus
+
+    - name: Create Azure Container Registry
+      run: az acr create --resource-group ${{ env.AZURE_RESOURCE_GROUP }} --name ${{ env.ACR_NAME }} --sku Basic --admin-enabled true
+
     - name: Login to Azure Container Registry
       run: |
         az acr login --name ${{ env.ACR_NAME }}
