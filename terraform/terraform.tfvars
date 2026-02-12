@@ -2,8 +2,8 @@
 subscription_id = "16d60876-2016-4013-9895-cc00224e539c"
 
 # Resource Group Configuration
-resource_group_name = "rg-flipkart-app11132212"
-location            = "canadacentral"
+resource_group_name = "rg-flipkart-app"
+location            = "eastus"
 
 # Azure Container Registry Configuration
 acr_name = "acrflipkartmobile22532533"

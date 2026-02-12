@@ -6,19 +6,19 @@ variable "subscription_id" {
 variable "resource_group_name" {
   description = "Name of the resource group"
   type        = string
-  default     = "rg-flipkart-app"
+  # default     = "rg-flipkart-app"
 }
 
 variable "location" {
   description = "Azure region for resources"
   type        = string
-  default     = "East US"
+  # default     = "East US"
 }
 
 variable "acr_name" {
   description = "Name of the Azure Container Registry (must be globally unique)"
   type        = string
-  default     = "acrflipkartmobile"
+# default     = "acrflipkartmobile"
 }
 
 variable "acr_sku" {
@@ -71,7 +71,7 @@ variable "acr_retention_days" {
 variable "aks_cluster_name" {
   description = "Name of the AKS cluster"
   type        = string
-  default     = "aks-flipkart-cluster"
+  # default     = "aks-flipkart-cluster"
 }
 
 variable "aks_node_count" {
@@ -95,7 +95,7 @@ variable "kubernetes_version" {
 variable "storage_account_name" {
   description = "Name of the Azure Storage Account (must be globally unique, 3-24 lowercase letters and numbers)"
   type        = string
-  default     = "stflipkartmobile"
+  # default     = "stflipkartmobile"
 }
 
 variable "storage_account_tier" {
@@ -136,7 +136,7 @@ variable "enable_key_vault" {
 variable "key_vault_name" {
   description = "Name of the Azure Key Vault (must be globally unique)"
   type        = string
-  default     = "kv-flipkart-app"
+  # default     = "kv-flipkart-app"
 }
 
 variable "key_vault_sku" {

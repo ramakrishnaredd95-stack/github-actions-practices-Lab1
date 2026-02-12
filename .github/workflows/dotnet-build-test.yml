@@ -8,8 +8,8 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_RESOURCE_GROUP: rg-flipkart-app11132212
-  ACR_NAME: acrflipkartmobile22532533
+  AZURE_RESOURCE_GROUP: rg-flipkart-app
+  ACR_NAME: acrflipkartmobile225325332
   AKS_CLUSTER_NAME: aks-flipkart-cluster22325342
   IMAGE_NAME: flipkartmobilepage
 
