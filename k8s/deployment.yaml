@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flipkartmobilepage-deployment
+  labels:
+    app: flipkartmobilepage
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: flipkartmobilepage
+  template:
+    metadata:
+      labels:
+        app: flipkartmobilepage
+    spec:
+      containers:
+      - name: flipkartmobilepage
+        image: acrflipkartmobile.azurecr.io/flipkartmobilepage:latest
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+        - containerPort: 8081
+          name: https
+          protocol: TCP
+        env:
+        - name: ASPNETCORE_URLS
+          value: "http://+:8080"
+        - name: ASPNETCORE_ENVIRONMENT
+          value: "Production"
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          timeoutSeconds: 3
+          failureThreshold: 3
