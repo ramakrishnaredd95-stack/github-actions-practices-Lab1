@@ -2,21 +2,21 @@
 subscription_id = "16d60876-2016-4013-9895-cc00224e539c"
 
 # Resource Group Configuration
-resource_group_name = "rg-ecommerce-app"
+resource_group_name = "rg-flipkart-app11132212"
 location            = "canadacentral"
 
 # Azure Container Registry Configuration
-acr_name = "acrecommercemobile2233"
+acr_name = "acrflipkartmobile22532533"
 acr_sku  = "Basic"
 
 # Azure Kubernetes Service Configuration
-aks_cluster_name   = "aks-ecommerce-cluster33552"
+aks_cluster_name   = "aks-flipkart-cluster22325342"
 aks_node_count     = 2
 aks_node_vm_size   = "Standard_B2s"
 kubernetes_version = "1.30.14"
 
 # Azure Storage Account Configuration
-storage_account_name             = "stecommerceapp2233"
+storage_account_name             = "stflipkartapp11132212"
 storage_account_tier             = "Standard"
 storage_account_replication_type = "LRS"
 
@@ -48,7 +48,7 @@ acr_retention_days     = 30
 
 # Key Vault Configuration
 enable_key_vault              = true
-key_vault_name                = "kvecom353236612"
+key_vault_name                = "kvflipkartapp11132212"
 key_vault_sku                 = "standard"
 kv_soft_delete_retention_days = 7
 kv_purge_protection_enabled   = false # Set to true for production
